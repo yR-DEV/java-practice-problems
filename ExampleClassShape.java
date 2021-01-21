@@ -10,6 +10,10 @@ public class ExampleClassShape {
 		this.sides = sides;
 		this.shape = shape;
 	}
+	
+	public String howManySides(int sides) {
+		return "This shape has: " + sides + " number of sides.";
+	}
 
 	public String getColor() {
 		return color;
@@ -42,7 +46,7 @@ public class ExampleClassShape {
 	
 	public static void main(String[] args) {
 		ExampleClassShape square = new ExampleClassShape("red", 4, true);
-		System.out.println("NEW SQUARE CREATED: " + square.toString());
+		System.out.println("NEW SQUARE CREATED: " + square.toString() + " and has " + square.howManySides(square.sides));
 	}
 	
 }
